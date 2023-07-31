@@ -1,0 +1,33 @@
+.masonry-item {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .masonry-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Customize the background color and opacity */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    color:'white';
+  }
+  
+  .masonry-item:hover .masonry-overlay {
+    opacity: 1;
+   
+  }
+  
+  .overlay-icons {
+    display: flex;
+    gap: 10px;
+    color:'white';
+  }
+  /*"size":["L","XL","M"],
+"color":["black","pink","green"]*/
