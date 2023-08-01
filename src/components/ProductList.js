@@ -50,7 +50,7 @@ const TitlebarImageList = () => {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/products`);
+        const res = await axios.get(`https://impossible-eel-helmet.cyclic.cloud/products`);
         console.log(res.data.product)
       
           setProducts(res.data.product);

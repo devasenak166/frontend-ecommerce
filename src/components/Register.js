@@ -25,7 +25,7 @@ export default function SignUp() {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/auth/register",
+        "https://impossible-eel-helmet.cyclic.cloud/auth/register",
         formData
       );
       console.log(response.data);

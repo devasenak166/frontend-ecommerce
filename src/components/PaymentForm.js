@@ -25,7 +25,7 @@ const PaymentForm = ({ handleNext }) => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/create-payment-intent",
+        "https://impossible-eel-helmet.cyclic.cloud/create-payment-intent",
         {
           tokenId: token.id,
           amount: 2000, // Replace with the desired amount in cents

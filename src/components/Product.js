@@ -35,7 +35,7 @@ const handleCart=async ()=>{
   }
 
   try {
-    const res=await axios.post(`http://localhost:5000/carts/create`, {
+    const res=await axios.post(`https://impossible-eel-helmet.cyclic.cloud/create`, {
       userId:userId,
       productId: Product._id, 
       quantity: quantity, 
@@ -55,7 +55,7 @@ const handleCart=async ()=>{
   useEffect(() => {
     const getProduct = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/products/${id}`);
+        const res = await axios.get(`https://impossible-eel-helmet.cyclic.cloud/products/${id}`);
         console.log(res.data.product);
 
         setProduct(res.data.product);

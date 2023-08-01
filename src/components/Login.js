@@ -24,7 +24,7 @@ export default function SignIn() {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/auth/login",
+        "https://impossible-eel-helmet.cyclic.cloud/auth/login",
         formData
       );
       console.log(response.data.accessToken);
